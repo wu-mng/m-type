@@ -1,0 +1,21 @@
+@import "_example_0";
+
+// EXAMPLE 02 //
+
+// Choose your scale(s) here //
+$scale: 1.25;
+
+// Optional extra scales at different screen width (see $breakpoints above)
+$scales: (tablet: 1.333, laptop: 1.5, desktop: 1.618);
+
+// if this is set to true, the interval between scale sizes will be smaller, 
+// resulting in smaller headings text sizes
+$stranded: true;
+
+// set the root-font size //
+// If the size is 16px, and the grid is 8-point, you can use .5rem increments 
+// to build the layouts. Set up variables for calculations otherwise.
+$font-size: 16px;
+
+// Optional extra font sizes at different screen sizes (see $breakpoints above)
+$font-sizes: (laptop:18px, desktop: 20px);

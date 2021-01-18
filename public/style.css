@@ -1,24 +1,422 @@
+@charset "UTF-8";
+/*! type-m v0.0.1 | License | link */
+/* changelog */
+/* 0.2 config.scss....................Configuration file for this stylesheet */
+/* 0.5....................................................Classes for testing*/
+/* 1. BASE STYLES */
 body {
-  font-family: sans-serif;
+  background: linear-gradient(to bottom, #b2e5ff 1px, transparent 1px);
+  background-size: 100% 16px;
+}
+
+/* 1.1 Structure............<html>, <body>, <header>, <main>, <section>, <article>, <footer> */
+html {
+  font-size: 100%;
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 112.5%;
+  }
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #212121;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  margin: 0;
+}
+@media screen and (min-width: 992px) {
+  body {
+    line-height: 1.778rem;
+  }
+}
+
+main {
   margin: auto;
-  max-width: 1280px;
+  margin-top: 3rem;
 }
 
-.navbar {
-  background-color: #313236;
-  border-radius: 2px;
-  max-width: 800px;
+article > * {
+  overflow: hidden;
 }
 
-.navbar a {
-  color: #aaa;
-  display: inline-block;
-  font-size: 15px;
-  padding: 10px;
-  text-decoration: none;
+/* 1.3 Headings.............<h1><h6> */
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.778rem;
+  }
 }
 
-.navbar a:hover {
-  color: #ffffff;
+h1 {
+  font-size: 2.489rem;
+  line-height: 4rem;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.052rem;
+    line-height: 5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 4.209rem;
+    line-height: 6.667rem;
+  }
 }
 
+h2 {
+  font-size: 2.074rem;
+  line-height: 3.5rem;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.442rem;
+    line-height: 4rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 3.158rem;
+    line-height: 4.889rem;
+  }
+}
+
+h3 {
+  font-size: 1.728rem;
+  line-height: 3rem;
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.954rem;
+    line-height: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h3 {
+    font-size: 2.369rem;
+    line-height: 3.556rem;
+  }
+}
+
+h4 {
+  font-size: 1.44rem;
+  line-height: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  h4 {
+    font-size: 1.563rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h4 {
+    font-size: 1.777rem;
+    line-height: 2.667rem;
+  }
+}
+
+h5 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+@media screen and (min-width: 768px) {
+  h5 {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h5 {
+    font-size: 1.333rem;
+    line-height: 2.223rem;
+  }
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h6 {
+    font-size: 1rem;
+    line-height: 1.778rem;
+  }
+}
+
+.size-zero {
+  font-size: 0.834rem;
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .size-zero {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .size-zero {
+    font-size: 0.875rem;
+    line-height: 1.334rem;
+  }
+}
+
+.size-less-than-zero {
+  font-size: 0.695rem;
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .size-less-than-zero {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .size-less-than-zero {
+    font-size: 0.751rem;
+    line-height: 1.334rem;
+  }
+}
+
+/* 1.4 Text.................<p>,<pre>, <fig>, <code> */
+blockquote, ol, p, ul, li, dt, dd {
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  blockquote, ol, p, ul, li, dt, dd {
+    margin-bottom: 1.778rem;
+  }
+}
+
+blockquote {
+  color: #515951;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-style: italic;
+  font-weight: 300;
+  margin: 3rem 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  blockquote {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  blockquote {
+    font-size: 1.333rem;
+    line-height: 2.223rem;
+  }
+}
+
+blockquote blockquote::before {
+  content: "— ";
+}
+
+blockquote blockquote {
+  margin-top: 0;
+  text-align: right;
+}
+
+blockquote blockquote p {
+  display: inline;
+}
+
+pre, code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+}
+
+pre {
+  border-radius: 0.1875rem;
+  padding: 1rem;
+  white-space: break-spaces;
+}
+
+.highlighter-rouge {
+  margin-bottom: 1.5rem;
+  background-color: #e9ece9;
+  border-radius: 0.1875rem;
+  padding: 0 0.375rem;
+}
+@media screen and (min-width: 992px) {
+  .highlighter-rouge {
+    margin-bottom: 1.778rem;
+  }
+}
+
+.highlight {
+  color: #f9f9f9;
+}
+
+/* 1.6 Lists................<dl>, <ol>, <ul> */
+dt {
+  font-weight: 500;
+}
+
+li ul, li ol {
+  margin-top: 1.5rem;
+}
+
+/* 1.9 Tables...............<table>, <thead>, <tbody>, <tfoot>, <tr>, <td> */
+table {
+  border-collapse: collapse;
+  border-top: 1px solid;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  table {
+    margin-bottom: 1.778rem;
+  }
+}
+
+thead {
+  border-bottom: 1px solid;
+}
+
+th {
+  font-weight: 500;
+  padding: 1rem;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #e9ece9;
+}
+
+td {
+  padding: 1rem;
+}
+
+/*------------------------------------
+  3. STRUCTURAL STYLES
+------------------------------------*/
+/* 3.1 Default layout */
+#site-wrapper {
+  margin-bottom: 8rem;
+}
+
+@media screen and (max-width: 280px) {
+  #site-wrapper {
+    width: 90%;
+  }
+}
+.post-header {
+  margin-bottom: 3.5rem;
+}
+
+.post-title {
+  font-size: 2.987rem;
+  line-height: 4rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .post-title {
+    font-size: 3.815rem;
+    line-height: 5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .post-title {
+    font-size: 5.611rem;
+    line-height: 7.112rem;
+  }
+}
+
+.post-tagline {
+  color: #515951;
+  font-size: 1.44rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .post-tagline {
+    font-size: 1.563rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .post-tagline {
+    font-size: 1.777rem;
+    line-height: 2.667rem;
+  }
+}
+
+#site-footer {
+  border-top: 1px dotted;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+/*------------------------------------
+  4. UTILITY STYLES
+------------------------------------*/
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 100%;
+  padding: 0 1rem;
+  max-width: 320px;
+}
+@media screen and (min-width: 536px) {
+  .wrapper {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 640px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper {
+    max-width: 720px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=style.css.map */

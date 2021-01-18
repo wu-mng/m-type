@@ -1,0 +1,34 @@
+// EXAMPLE 00 //
+
+// LAYOUT //
+// starting at each screen *px size...
+$brekapoints: (phablet: 536px, tablet: 768px, laptop: 992px, desktop: 1200px);
+// ...the content is *px large
+$containers:  (mobile: 320px, phablet: 480px, tablet: 640px, laptop: 720px);
+
+// TYPOGRAPHY //
+// Choose your scale(s) here
+$scale: 1.2;
+
+// Optional extra scales at different screen sizes (see $breakpoints)
+$scales: (tablet: 1.25, laptop: 1.333);
+
+// if this is set to true, the interval between scale sizes will be smaller, 
+// resulting in smaller headings text sizes
+$stranded: false;
+
+// set the root-font size
+// If the size is 16px, and the grid is 8-point, you can use .5rem increments 
+// (on both sides...) to build the layouts. Set up variables for calculations 
+// otherwise.
+$font-size: 16px;
+
+// Optional extra font sizes at different screen widths (see $breakpoints)
+$font-sizes: (laptop: 18px);
+
+// set the approximate distance between lines (a.k.a 'leading') 
+// (the actual line-height will be a multiple of $grid-points)
+$line-spacing: 1.5;
+
+// baseline grid row height, in points
+$grid-points: 8;
