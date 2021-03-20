@@ -1,4 +1,4 @@
-/*! type-m v0.0.1 | License | link */
+/*! m-type.css v1.0 | GNU GPL v3.0 | https://gitlab.com/wu-mng/m-type */
 /* changelog */
 
 /* 0.2 config.scss....................Configuration file for this stylesheet */ 
@@ -58,8 +58,8 @@ h4 { @include typography(3); }
 h5 { @include typography(2); }  
 h6 { @include typography(1); }    
 
-.size-zero { @include typography(0); }
-.size-less-than-zero { @include typography(0.5); }
+.small { @include typography(0.5); }
+.smaller { @include typography(0); }
 
 /* 1.4 Text.................<p>,<pre>, <fig>, <code> */
 blockquote, ol, p, ul, li, dt, dd { @include baseline; }

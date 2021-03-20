@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! type-m v0.0.1 | License | link */
+/*! m-type.css v1.0 | GNU GPL v3.0 | https://gitlab.com/wu-mng/m-type */
 /* changelog */
 /* 0.2 config.scss....................Configuration file for this stylesheet */
 /* 0.5....................................................Classes for testing*/
@@ -160,35 +160,35 @@ h6 {
   }
 }
 
-.size-zero {
-  font-size: 0.834rem;
+.small {
+  font-size: 0.875rem;
   line-height: 1.5rem;
 }
 @media screen and (min-width: 768px) {
-  .size-zero {
+  .small {
     font-size: 0.875rem;
     line-height: 1.5rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .size-zero {
+  .small {
     font-size: 0.875rem;
     line-height: 1.334rem;
   }
 }
 
-.size-less-than-zero {
-  font-size: 0.695rem;
+.smaller {
+  font-size: 0.834rem;
   line-height: 1.5rem;
 }
 @media screen and (min-width: 768px) {
-  .size-less-than-zero {
+  .smaller {
     font-size: 0.8rem;
     line-height: 1.5rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .size-less-than-zero {
+  .smaller {
     font-size: 0.751rem;
     line-height: 1.334rem;
   }
