@@ -12,9 +12,15 @@ The grid establish the vertical rhythm of the page, allowing for visual consiste
 
 [Sass](https://sass-lang.com/install) should be installed in your system.
 
-## basic usage
+## usage
 
-Open `_config.scss`, select one of the examples, or insert custom values (see below); then compile: `sass _config.scss style.css`.
+- navigate to the `public/_sass/` directory
+
+- open `main.scss`
+
+- choose one of the examples, or insert your custom values 
+
+- compile: `sass main.scss ../style.css` 
 
 ## custom values
 
