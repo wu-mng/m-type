@@ -16,7 +16,7 @@ The grid establish the vertical rhythm of the page, allowing for visual consiste
 
 - navigate to the `public/_sass/` directory
 
-- open `main.scss`
+- open `_config.scss`
 
 - choose one of the examples, or insert your custom values 
 
